@@ -41,7 +41,7 @@ html
 #conteneur
 {
     background-color: #ff8a80;
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     font-weight: bold;
@@ -234,13 +234,13 @@ hr
     
     font-size: 11px;
     width: 28px;
-    margin: -38px;
+    margin-top: -38px;
     line-height: 130px;
     color: #ff8a80;
 }
 
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 425px)
 {
     #content
     {
@@ -263,9 +263,60 @@ hr
         box-sizing: border-box;
     }
 
+    .bloc{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .childl {
+        width: 14px;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .childm{
+        margin-right: 40px;
+    }
+    .dots {
+        width: 14px;
+    }
+
 }
 
-@media screen and (max-width: 1400px) and (min-width: 1024px)
+@media screen and (max-width: 1024px) and (min-width: 426px)
+{
+
+    #content
+    {
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+
+    }
+
+     #conteneur
+    {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    #principal
+    {
+        width: 100%;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .childm{
+        margin-right: 45px;
+    }
+
+    .dots {
+        width: 14px;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1025px)
 {
 
     #content
