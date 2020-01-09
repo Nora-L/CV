@@ -48,17 +48,11 @@ html
     justify-content: space-evenly;
 }
 
-
-
-.element:nth-child(6)
-{
-    flex: 0.3;
-}
-
 .c_icones{
     float: right;
     padding-right: 30px;
 }
+
 
 /*Images*/
 
@@ -281,9 +275,13 @@ hr
         width: 14px;
     }
 
+    .element{
+        padding-bottom: 30px;
+    }
+
 }
 
-@media screen and (max-width: 1024px) and (min-width: 426px)
+@media screen and (max-width: 768px) and (min-width: 426px)
 {
 
     #content
@@ -314,9 +312,13 @@ hr
     .dots {
         width: 14px;
     }
+
+    .element{
+        padding-bottom: 30px;
+    }
 }
 
-@media screen and (max-width: 1400px) and (min-width: 1025px)
+@media screen and (max-width: 1440px) and (min-width: 769px)
 {
 
     #content
@@ -335,4 +337,23 @@ hr
         width: 45%;
         box-sizing: border-box;
     }
+}
+
+@media screen and (min-width: 1441px)
+{
+    
+    #conteneur
+    {
+        font-size: 21px;
+    }
+
+    #principal
+    {
+        font-size: 21px;
+    }
+
+    .childl {
+        margin: 8px;
+    }
+
 }
